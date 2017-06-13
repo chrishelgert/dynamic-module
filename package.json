@@ -1,0 +1,35 @@
+{
+  "name": "dynamic-module",
+  "description": "install modules if you need them",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "standard --verbose | snazzy"
+  },
+  "author": "Chris Helgert",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/chrishelgert/dynamic-module.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chrishelgert/dynamic-module/issues"
+  },
+  "dependencies": {
+    "shelljs": "^0.7.8"
+  },
+  "devDependencies": {
+    "jest": "^20.0.4",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.2"
+  },
+  "jest": {
+    "collectCoverage": true
+  },
+  "standard": {
+    "env": {
+      "jest": true
+    }
+  }
+}
