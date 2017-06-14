@@ -10,7 +10,15 @@
 
 ## Usage
 
-TODO
+```javascript
+dynamicModule('flat-file-db')
+  .then((flatfile) => {
+    // use flatfile ...
+  })
+  .catch((err) => {
+    // installation failed
+  })
+```
 
 ## Contributing
 
