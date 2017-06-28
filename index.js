@@ -23,7 +23,9 @@ const installDependency = (moduleName) => {
  * @param  {string} moduleName name of the module
  * @return {any}               resolved node_module
  */
-const resolveNodeModule = (moduleName) => require(path.join(process.cwd(), 'node_modules', moduleName))
+const resolveNodeModule = (moduleName) => {
+  return require(path.join(__dirname, 'node_modules', moduleName))
+}
 
 /**
  * dynamic module
