@@ -24,7 +24,7 @@ const installDependency = (moduleName) => {
  * @return {any}               resolved node_module
  */
 const resolveNodeModule = (moduleName) => {
-  return require(path.join(__dirname, 'node_modules', moduleName))
+  return require(path.join(__dirname, '..', moduleName))
 }
 
 /**
