@@ -38,15 +38,13 @@ module.exports = (moduleName) => new Promise((resolve, reject) => {
     // is it already installed
     resolve(resolveNodeModule(moduleName))
   } catch (err) {
-    console.log(`module '${moduleName}' is not installed. Let´s install it`)
-  }
+    // install dependency
+    if (installDependency(moduleName).code !== 0) {
+      // error while installing the module
+      reject(new Error(`failed to install ${moduleName}`))
+    }
 
-  // install dependency
-  if (installDependency(moduleName).code !== 0) {
-    // error while installing the module
-    reject(new Error(`failed to install ${moduleName}`))
+    // return required module
+    resolve(resolveNodeModule(moduleName))
   }
-
-  // return required module
-  resolve(resolveNodeModule(moduleName))
 })
