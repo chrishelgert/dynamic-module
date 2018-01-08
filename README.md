@@ -30,4 +30,4 @@ dynamicModule('flat-file-db')
 
 ## LICENSE
 
-Copyright (c) 2017 Chris Helgert. See [License](./LICENSE.md) for details.
+Copyright (c) 2017-present Chris Helgert. See [License](./LICENSE.md) for details.
