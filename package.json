@@ -17,7 +17,7 @@
     "url": "https://github.com/chrishelgert/dynamic-module/issues"
   },
   "dependencies": {
-    "shelljs": "^0.7.8"
+    "shelljs": "^0.8.0"
   },
   "devDependencies": {
     "jest": "^21.0.1",
