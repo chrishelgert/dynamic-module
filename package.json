@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "jest": "^21.0.1",
-    "snazzy": "^7.0.0",
+    "snazzy": "^8.0.0",
     "standard": "^10.0.2"
   },
   "jest": {
